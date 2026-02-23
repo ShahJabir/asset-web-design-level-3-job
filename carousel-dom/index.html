@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider Template</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="slider">
+      <div class="slider-track">
+        <div class="slide">
+          <img src="" alt="Slide 1" id="imgSrc" />
+        </div>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <button
+        class="nav-btn prev-btn"
+        aria-label="Previous slide"
+        onclick="previous()"
+      >
+        ‹
+      </button>
+      <button class="nav-btn next-btn" aria-label="Next slide" onclick="next()">
+        ›
+      </button>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

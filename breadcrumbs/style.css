@@ -1,0 +1,25 @@
+.breadcrumb-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Adjust gap as needed */
+}
+
+.breadcrumb-navigation li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.breadcrumb-navigation li:last-child a {
+  color: #6c757d; /* Color for the current (last) page */
+  pointer-events: none; /* Make the last item not clickable */
+  cursor: default;
+}
+
+.breadcrumb-navigation li + li:before {
+  content: "/"; /* Add a separator */
+  padding: 0 0.25rem;
+  color: #6c757d;
+}
